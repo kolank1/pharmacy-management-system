@@ -1,0 +1,2201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1512</width>
+    <height>846</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QMainWindow{
+   qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(0, 0, 0, 255), stop:1 rgba(255, 255, 255, 255))
+	
+}
+
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QStackedWidget" name="stackedWidget">
+    <property name="geometry">
+     <rect>
+      <x>11</x>
+      <y>14</y>
+      <width>1490</width>
+      <height>767</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Minimum" vsizetype="Maximum">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>0</width>
+      <height>48</height>
+     </size>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="mainPage">
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <widget class="QFrame" name="frame">
+      <property name="geometry">
+       <rect>
+        <x>11</x>
+        <y>11</y>
+        <width>191</width>
+        <height>745</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>745</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>191</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QFrame#frame {
+    background-color: #2b2d42;
+    border-radius: 15px;
+}
+
+QPushButton {
+    background-color: transparent;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    padding: 12px 18px;
+    text-align: left;
+    font-size: 15px;
+}
+
+QPushButton:hover {
+    background-color: #6C4DFF;
+}</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Shape::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Shadow::Raised</enum>
+      </property>
+      <widget class="QPushButton" name="logoutButton">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>610</y>
+         <width>201</width>
+         <height>48</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>128</width>
+         <height>48</height>
+        </size>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+    background-color: transparent;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    padding-left:10px;
+    text-align: left;
+    font-size: 15px;
+}
+
+QPushButton:hover {
+    background-color: #6C4DFF;
+}</string>
+       </property>
+       <property name="text">
+        <string>🚪 вихід</string>
+       </property>
+      </widget>
+      <widget class="QWidget" name="widget" native="true">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>130</y>
+         <width>201</width>
+         <height>311</height>
+        </rect>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout">
+        <item>
+         <widget class="QPushButton" name="medicinesButton">
+          <property name="minimumSize">
+           <size>
+            <width>150</width>
+            <height>48</height>
+           </size>
+          </property>
+          <property name="cursor">
+           <cursorShape>PointingHandCursor</cursorShape>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+    background-color: transparent;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    padding-left: 10px;
+    text-align: left;
+    font-size: 15px;
+}
+
+QPushButton:hover {
+    background-color: #6C4DFF;
+}
+QPushButton[active=&quot;true&quot;] {
+    background-color: #6C4DFF;
+}</string>
+          </property>
+          <property name="text">
+           <string>💊 Ліки</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="salesButton">
+          <property name="minimumSize">
+           <size>
+            <width>128</width>
+            <height>48</height>
+           </size>
+          </property>
+          <property name="cursor">
+           <cursorShape>PointingHandCursor</cursorShape>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+    background-color: transparent;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    padding-left: 10px;
+    text-align: left;
+    font-size: 15px;
+}
+
+QPushButton:hover {
+    background-color: #6C4DFF;
+}
+QPushButton[active=&quot;true&quot;] {
+    background-color: #6C4DFF;
+}</string>
+          </property>
+          <property name="text">
+           <string>🛒 Продаж</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="usersButton">
+          <property name="minimumSize">
+           <size>
+            <width>128</width>
+            <height>48</height>
+           </size>
+          </property>
+          <property name="cursor">
+           <cursorShape>PointingHandCursor</cursorShape>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+    background-color: transparent;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    padding-left: 10px;
+    text-align: left;
+    font-size: 15px;
+}
+
+QPushButton:hover {
+    background-color: #6C4DFF;
+}
+QPushButton[active=&quot;true&quot;] {
+    background-color: #6C4DFF;
+}</string>
+          </property>
+          <property name="text">
+           <string>👥 Користувачі</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="reportsButton">
+          <property name="minimumSize">
+           <size>
+            <width>128</width>
+            <height>48</height>
+           </size>
+          </property>
+          <property name="cursor">
+           <cursorShape>PointingHandCursor</cursorShape>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+    background-color: transparent;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    padding-left: 10px;
+    text-align: left;
+    font-size: 15px;
+}
+
+QPushButton:hover {
+    background-color: #6C4DFF;
+}
+QPushButton[active=&quot;true&quot;] {
+    background-color: #6C4DFF;
+}</string>
+          </property>
+          <property name="text">
+           <string>📊 Звіти</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QLabel" name="label_17">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>50</y>
+         <width>171</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">    background-color: transparent;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    padding-left: 10px;
+    text-align: left;
+    font-size: 15px;
+font: 900 italic 18pt &quot;Segoe UI&quot;;</string>
+       </property>
+       <property name="text">
+        <string>Neal Net</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QStackedWidget" name="stackedWidget_2">
+      <property name="geometry">
+       <rect>
+        <x>199</x>
+        <y>11</y>
+        <width>1301</width>
+        <height>741</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="currentIndex">
+       <number>1</number>
+      </property>
+      <widget class="QWidget" name="usersPage">
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <layout class="QGridLayout" name="gridLayout">
+        <item row="1" column="1">
+         <widget class="QWidget" name="widget_9" native="true">
+          <property name="minimumSize">
+           <size>
+            <width>193</width>
+            <height>181</height>
+           </size>
+          </property>
+          <widget class="QPushButton" name="addUserButton">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>30</y>
+             <width>191</width>
+             <height>41</height>
+            </rect>
+           </property>
+           <property name="cursor">
+            <cursorShape>PointingHandCursor</cursorShape>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton{
+    background-color:rgb(198, 220, 255);
+    color: rgb(43, 45, 66);
+    border: none;
+    border-radius: 6px;
+    padding: 12px;
+    font-size: 16px;
+}
+QPushButton:hover {
+     background-color:rgb(0, 170, 255);
+}
+
+QPushButton:pressed {
+    background-color:rgb(170, 0, 255);
+}
+</string>
+           </property>
+           <property name="text">
+            <string>Додати користувача</string>
+           </property>
+           <property name="icon">
+            <iconset theme="QIcon::ThemeIcon::ListAdd"/>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="deleteUserButton">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>170</y>
+             <width>191</width>
+             <height>41</height>
+            </rect>
+           </property>
+           <property name="cursor">
+            <cursorShape>PointingHandCursor</cursorShape>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton{
+    background-color:rgb(205, 171, 255);
+    color: rgb(43, 45, 66);
+    border: none;
+    border-radius: 6px;
+    padding: 12px;
+    font-size: 16px;
+}
+QPushButton:hover {
+     background-color:rgb(170, 85, 255);
+}
+
+QPushButton:pressed {
+    background-color:rgb(170, 0, 255);
+}
+</string>
+           </property>
+           <property name="text">
+            <string>  Видалити</string>
+           </property>
+           <property name="icon">
+            <iconset theme="QIcon::ThemeIcon::EditDelete"/>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="editUserButton">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>100</y>
+             <width>191</width>
+             <height>41</height>
+            </rect>
+           </property>
+           <property name="cursor">
+            <cursorShape>PointingHandCursor</cursorShape>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton{
+    background-color:rgb(183, 184, 255);
+    color: rgb(43, 45, 66);
+    border: none;
+    border-radius: 6px;
+    padding: 12px;
+    font-size: 16px;
+}
+QPushButton:hover {
+     background-color:rgb(85, 0, 255);
+}
+
+QPushButton:pressed {
+    background-color:rgb(170, 0, 255);
+}
+</string>
+           </property>
+           <property name="text">
+            <string>  Редагувати</string>
+           </property>
+           <property name="icon">
+            <iconset theme="QIcon::ThemeIcon::MailMessageNew"/>
+           </property>
+          </widget>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QTableWidget" name="usersTable">
+          <property name="styleSheet">
+           <string notr="true">QTableWidget::item:selected {
+    background-color:#8ec5ff;
+    color: black;
+}
+QTableWidget::item {
+    background-color:rgb(255, 255, 255);
+}
+QTableWidget::item:hover {
+    background-color: #8ec5ff;
+}</string>
+          </property>
+          <column>
+           <property name="text">
+            <string>№</string>
+           </property>
+           <property name="background">
+            <color>
+             <red>216</red>
+             <green>216</green>
+             <blue>216</blue>
+            </color>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Логін</string>
+           </property>
+           <property name="background">
+            <color>
+             <red>216</red>
+             <green>216</green>
+             <blue>216</blue>
+            </color>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Роль</string>
+           </property>
+           <property name="background">
+            <color>
+             <red>216</red>
+             <green>216</green>
+             <blue>216</blue>
+            </color>
+           </property>
+          </column>
+         </widget>
+        </item>
+        <item row="0" column="0">
+         <widget class="QLabel" name="label_18">
+          <property name="font">
+           <font>
+            <pointsize>18</pointsize>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Користувачі</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="medicinesPage">
+       <layout class="QGridLayout" name="gridLayout_3">
+        <item row="0" column="1" rowspan="2">
+         <widget class="QWidget" name="widget_4" native="true">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>311</width>
+            <height>500</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>311</width>
+            <height>550</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true"> background-color:rgb(255, 255, 255);</string>
+          </property>
+          <widget class="QLabel" name="label_6">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>10</y>
+             <width>281</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Детальна інформація</string>
+           </property>
+          </widget>
+          <widget class="QWidget" name="layoutWidget">
+           <property name="geometry">
+            <rect>
+             <x>20</x>
+             <y>50</y>
+             <width>271</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <layout class="QHBoxLayout" name="horizontalLayout_6">
+            <item>
+             <widget class="QLabel" name="label_7">
+              <property name="minimumSize">
+               <size>
+                <width>65</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>80</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>Назва:</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="detailNameLabel">
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="layoutWidget">
+           <property name="geometry">
+            <rect>
+             <x>20</x>
+             <y>90</y>
+             <width>271</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <layout class="QHBoxLayout" name="horizontalLayout_7">
+            <item>
+             <widget class="QLabel" name="label_8">
+              <property name="minimumSize">
+               <size>
+                <width>65</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>80</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>Категорія:</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="detailCategoryLabel">
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="layoutWidget">
+           <property name="geometry">
+            <rect>
+             <x>20</x>
+             <y>130</y>
+             <width>271</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <layout class="QHBoxLayout" name="horizontalLayout_8">
+            <item>
+             <widget class="QLabel" name="label_9">
+              <property name="minimumSize">
+               <size>
+                <width>65</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>80</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>Виробник:</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="detailManufacturerLabel">
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="layoutWidget">
+           <property name="geometry">
+            <rect>
+             <x>20</x>
+             <y>170</y>
+             <width>271</width>
+             <height>141</height>
+            </rect>
+           </property>
+           <layout class="QHBoxLayout" name="horizontalLayout_9">
+            <item>
+             <widget class="QLabel" name="label_10">
+              <property name="minimumSize">
+               <size>
+                <width>65</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>80</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>Опис:</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignmentFlag::AlignLeading|Qt::AlignmentFlag::AlignLeft|Qt::AlignmentFlag::AlignTop</set>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="detailDescriptionLabel">
+              <property name="maximumSize">
+               <size>
+                <width>200</width>
+                <height>140</height>
+               </size>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignmentFlag::AlignLeading|Qt::AlignmentFlag::AlignLeft|Qt::AlignmentFlag::AlignTop</set>
+              </property>
+              <property name="wordWrap">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="layoutWidget">
+           <property name="geometry">
+            <rect>
+             <x>20</x>
+             <y>320</y>
+             <width>271</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <layout class="QHBoxLayout" name="horizontalLayout_10">
+            <item>
+             <widget class="QLabel" name="label_11">
+              <property name="minimumSize">
+               <size>
+                <width>65</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>80</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>Ціна:</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="detailPriceLabel">
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="layoutWidget">
+           <property name="geometry">
+            <rect>
+             <x>20</x>
+             <y>360</y>
+             <width>271</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <layout class="QHBoxLayout" name="horizontalLayout_11">
+            <item>
+             <widget class="QLabel" name="label_12">
+              <property name="minimumSize">
+               <size>
+                <width>65</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>80</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>Кількість:</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="detailQuantityLabel">
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QLabel" name="detailStatusLabel_2">
+           <property name="geometry">
+            <rect>
+             <x>21</x>
+             <y>401</y>
+             <width>65</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>65</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>80</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>Статус:</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="detailStatusLabel">
+           <property name="geometry">
+            <rect>
+             <x>90</x>
+             <y>400</y>
+             <width>111</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QLabel{
+
+    border-radius: 6px;
+    padding: 12px;
+    font-size: 16px;
+}</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </widget>
+        </item>
+        <item row="0" column="0">
+         <widget class="QFrame" name="frame_2">
+          <property name="minimumSize">
+           <size>
+            <width>940</width>
+            <height>50</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QFrame {
+    background: none;
+    border: none;
+    gridline-color: #E8E8E8;
+    border-radius: 10px;
+}</string>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::Shape::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Shadow::Raised</enum>
+          </property>
+          <widget class="QLabel" name="titleMedicinesLabel">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>-10</y>
+             <width>271</width>
+             <height>51</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">font: 900 16pt &quot;Segoe UI&quot;;</string>
+           </property>
+           <property name="text">
+            <string>Список препаратів</string>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="MedicinesLineSeach">
+           <property name="geometry">
+            <rect>
+             <x>580</x>
+             <y>5</y>
+             <width>351</width>
+             <height>35</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QLineEdit {
+    background: white;
+    border: 2px solid #E6E6E6;
+    border-radius: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 14px;
+    color: #555;
+}
+
+</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="placeholderText">
+            <string>Пошук препаратів</string>
+           </property>
+          </widget>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QTableWidget" name="medicinesTable">
+          <property name="styleSheet">
+           <string notr="true">QTableWidget::item:selected {
+    background-color:#8ec5ff;
+    color: black;
+}
+QTableWidget::item {
+    background-color:rgb(255, 255, 255);
+}
+QTableWidget::item:hover {
+    background-color: #8ec5ff;
+}</string>
+          </property>
+          <property name="columnCount">
+           <number>5</number>
+          </property>
+          <attribute name="horizontalHeaderStretchLastSection">
+           <bool>false</bool>
+          </attribute>
+          <attribute name="verticalHeaderShowSortIndicator" stdset="0">
+           <bool>false</bool>
+          </attribute>
+          <column>
+           <property name="text">
+            <string>№</string>
+           </property>
+           <property name="background">
+            <color>
+             <red>216</red>
+             <green>216</green>
+             <blue>216</blue>
+            </color>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Назва</string>
+           </property>
+           <property name="background">
+            <color>
+             <red>216</red>
+             <green>216</green>
+             <blue>216</blue>
+            </color>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Категорія</string>
+           </property>
+           <property name="background">
+            <color>
+             <red>216</red>
+             <green>216</green>
+             <blue>216</blue>
+            </color>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Ціна</string>
+           </property>
+           <property name="background">
+            <color>
+             <red>216</red>
+             <green>216</green>
+             <blue>216</blue>
+            </color>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Кількість</string>
+           </property>
+           <property name="background">
+            <color>
+             <red>216</red>
+             <green>216</green>
+             <blue>216</blue>
+            </color>
+           </property>
+          </column>
+         </widget>
+        </item>
+        <item row="2" column="0" colspan="2">
+         <widget class="QWidget" name="widget_8" native="true">
+          <property name="minimumSize">
+           <size>
+            <width>150</width>
+            <height>55</height>
+           </size>
+          </property>
+          <widget class="QPushButton" name="editMedicineButton">
+           <property name="geometry">
+            <rect>
+             <x>160</x>
+             <y>10</y>
+             <width>131</width>
+             <height>41</height>
+            </rect>
+           </property>
+           <property name="cursor">
+            <cursorShape>PointingHandCursor</cursorShape>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton{
+    background-color:rgb(183, 184, 255);
+    color: rgb(43, 45, 66);
+    border: none;
+    border-radius: 6px;
+    padding: 12px;
+    font-size: 16px;
+}
+QPushButton:hover {
+     background-color:rgb(85, 0, 255);
+}
+
+QPushButton:pressed {
+    background-color:rgb(170, 0, 255);
+}
+</string>
+           </property>
+           <property name="text">
+            <string> Редагувати</string>
+           </property>
+           <property name="icon">
+            <iconset theme="QIcon::ThemeIcon::MailMessageNew"/>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="addMedicineButton">
+           <property name="geometry">
+            <rect>
+             <x>20</x>
+             <y>10</y>
+             <width>131</width>
+             <height>41</height>
+            </rect>
+           </property>
+           <property name="cursor">
+            <cursorShape>PointingHandCursor</cursorShape>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton{
+    background-color:rgb(198, 220, 255);
+    color: rgb(43, 45, 66);
+    border: none;
+    border-radius: 6px;
+    padding: 12px;
+    font-size: 16px;
+}
+QPushButton:hover {
+     background-color:rgb(0, 170, 255);
+}
+
+QPushButton:pressed {
+    background-color:rgb(170, 0, 255);
+}
+</string>
+           </property>
+           <property name="text">
+            <string> Додати</string>
+           </property>
+           <property name="icon">
+            <iconset theme="QIcon::ThemeIcon::ListAdd"/>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="deleteMedicineButton">
+           <property name="geometry">
+            <rect>
+             <x>300</x>
+             <y>10</y>
+             <width>131</width>
+             <height>41</height>
+            </rect>
+           </property>
+           <property name="cursor">
+            <cursorShape>ForbiddenCursor</cursorShape>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton{
+    background-color:rgb(205, 171, 255);
+    color: rgb(43, 45, 66);
+    border: none;
+    border-radius: 6px;
+    padding: 12px;
+    font-size: 16px;
+}
+QPushButton:hover {
+     background-color:rgb(170, 85, 255);
+}
+
+QPushButton:pressed {
+    background-color:rgb(170, 0, 255);
+}
+</string>
+           </property>
+           <property name="text">
+            <string>  Видалити</string>
+           </property>
+           <property name="icon">
+            <iconset theme="QIcon::ThemeIcon::EditDelete"/>
+           </property>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="salesPage">
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <layout class="QHBoxLayout" name="horizontalLayout_3">
+        <item>
+         <widget class="QFrame" name="pr_freme">
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true"/>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::Shape::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Shadow::Raised</enum>
+          </property>
+          <layout class="QHBoxLayout" name="horizontalLayout_4">
+           <item>
+            <widget class="QWidget" name="widget_2" native="true">
+             <property name="styleSheet">
+              <string notr="true">
+</string>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout_3">
+              <item>
+               <widget class="QWidget" name="widget_6" native="true">
+                <property name="minimumSize">
+                 <size>
+                  <width>200</width>
+                  <height>80</height>
+                 </size>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">
+</string>
+                </property>
+                <widget class="QLineEdit" name="selasSearchEdit">
+                 <property name="geometry">
+                  <rect>
+                   <x>10</x>
+                   <y>40</y>
+                   <width>431</width>
+                   <height>35</height>
+                  </rect>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QLineEdit {
+    background: white;
+    border: 2px solid #E6E6E6;
+    border-radius: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 14px;
+    color: #555;
+}
+
+</string>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="placeholderText">
+                  <string>Введіть назву ліків,категорії тощо....</string>
+                 </property>
+                </widget>
+                <widget class="QLabel" name="label_2">
+                 <property name="geometry">
+                  <rect>
+                   <x>0</x>
+                   <y>10</y>
+                   <width>111</width>
+                   <height>21</height>
+                  </rect>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <pointsize>10</pointsize>
+                   <italic>false</italic>
+                   <bold>true</bold>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>Пошук ліків</string>
+                 </property>
+                </widget>
+               </widget>
+              </item>
+              <item>
+               <widget class="QTableWidget" name="SelasMedicinesTable">
+                <property name="styleSheet">
+                 <string notr="true">QTableWidget::item:selected {
+    background-color:rgb(255, 255, 255);
+    color: black;
+}
+QTableWidget::item {
+    background-color:rgb(255, 255, 255);
+}
+QTableWidget::item:hover {
+    background-color: rgb(255, 255, 255);
+}
+
+</string>
+                </property>
+                <column>
+                 <property name="text">
+                  <string>№</string>
+                 </property>
+                 <property name="background">
+                  <color>
+                   <red>216</red>
+                   <green>216</green>
+                   <blue>216</blue>
+                  </color>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>Назва</string>
+                 </property>
+                 <property name="background">
+                  <color>
+                   <red>216</red>
+                   <green>216</green>
+                   <blue>216</blue>
+                  </color>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>Категорія</string>
+                 </property>
+                 <property name="background">
+                  <color>
+                   <red>216</red>
+                   <green>216</green>
+                   <blue>216</blue>
+                  </color>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>Ціна</string>
+                 </property>
+                 <property name="background">
+                  <color>
+                   <red>216</red>
+                   <green>216</green>
+                   <blue>216</blue>
+                  </color>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>Кількість</string>
+                 </property>
+                 <property name="background">
+                  <color>
+                   <red>216</red>
+                   <green>216</green>
+                   <blue>216</blue>
+                  </color>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="background">
+                  <color>
+                   <red>216</red>
+                   <green>216</green>
+                   <blue>216</blue>
+                  </color>
+                 </property>
+                </column>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <widget class="QWidget" name="widget_3" native="true">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout_4">
+              <item>
+               <widget class="QWidget" name="widget_7" native="true">
+                <property name="minimumSize">
+                 <size>
+                  <width>150</width>
+                  <height>50</height>
+                 </size>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">
+</string>
+                </property>
+                <widget class="QLabel" name="label_5">
+                 <property name="geometry">
+                  <rect>
+                   <x>10</x>
+                   <y>10</y>
+                   <width>171</width>
+                   <height>20</height>
+                  </rect>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <pointsize>10</pointsize>
+                   <italic>false</italic>
+                   <bold>true</bold>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>Чек  продажу</string>
+                 </property>
+                </widget>
+               </widget>
+              </item>
+              <item>
+               <widget class="QTableWidget" name="CardTable">
+                <property name="styleSheet">
+                 <string notr="true">QTableWidget::item:selected {
+    background-color:rgb(255, 255, 255);
+    color: black;
+}
+QTableWidget::item {
+    background-color:rgb(255, 255, 255);
+}
+QTableWidget::item:hover {
+    background-color: rgb(255, 255, 255);
+}
+
+</string>
+                </property>
+                <column>
+                 <property name="text">
+                  <string>#</string>
+                 </property>
+                 <property name="background">
+                  <color>
+                   <red>216</red>
+                   <green>216</green>
+                   <blue>216</blue>
+                  </color>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>Назва</string>
+                 </property>
+                 <property name="background">
+                  <color>
+                   <red>216</red>
+                   <green>216</green>
+                   <blue>216</blue>
+                  </color>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>Кількість</string>
+                 </property>
+                 <property name="background">
+                  <color>
+                   <red>216</red>
+                   <green>216</green>
+                   <blue>216</blue>
+                  </color>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>Ціна</string>
+                 </property>
+                 <property name="background">
+                  <color>
+                   <red>216</red>
+                   <green>216</green>
+                   <blue>216</blue>
+                  </color>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>Сума</string>
+                 </property>
+                 <property name="background">
+                  <color>
+                   <red>216</red>
+                   <green>216</green>
+                   <blue>216</blue>
+                  </color>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="background">
+                  <color>
+                   <red>216</red>
+                   <green>216</green>
+                   <blue>216</blue>
+                  </color>
+                 </property>
+                </column>
+               </widget>
+              </item>
+              <item>
+               <widget class="QWidget" name="widget_5" native="true">
+                <property name="minimumSize">
+                 <size>
+                  <width>180</width>
+                  <height>80</height>
+                 </size>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true"/>
+                </property>
+                <widget class="QPushButton" name="clearCardButton">
+                 <property name="geometry">
+                  <rect>
+                   <x>10</x>
+                   <y>10</y>
+                   <width>151</width>
+                   <height>41</height>
+                  </rect>
+                 </property>
+                 <property name="cursor">
+                  <cursorShape>PointingHandCursor</cursorShape>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton{
+    background-color:rgb(226, 226, 226);
+    color: black;
+
+ 	border-radius:6px;
+    padding: 12px;
+    font-size: 16px;
+}
+
+QPushButton:hover{
+    background-color:rgb(235, 235, 235);
+}
+QPushButton:pressed {
+    background-color:rgb(132, 132, 132);
+}
+</string>
+                 </property>
+                 <property name="text">
+                  <string>очистити чек</string>
+                 </property>
+                 <property name="icon">
+                  <iconset theme="QIcon::ThemeIcon::EditDelete"/>
+                 </property>
+                </widget>
+                <widget class="QLabel" name="Label_2">
+                 <property name="geometry">
+                  <rect>
+                   <x>320</x>
+                   <y>7</y>
+                   <width>121</width>
+                   <height>21</height>
+                  </rect>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <pointsize>10</pointsize>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>загальна сума:</string>
+                 </property>
+                </widget>
+                <widget class="QLabel" name="TotalSalesLabel">
+                 <property name="geometry">
+                  <rect>
+                   <x>440</x>
+                   <y>0</y>
+                   <width>141</width>
+                   <height>31</height>
+                  </rect>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <pointsize>16</pointsize>
+                   <bold>true</bold>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">color:black;</string>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                </widget>
+                <widget class="QPushButton" name="mekeSaleButton">
+                 <property name="geometry">
+                  <rect>
+                   <x>410</x>
+                   <y>30</y>
+                   <width>161</width>
+                   <height>41</height>
+                  </rect>
+                 </property>
+                 <property name="cursor">
+                  <cursorShape>PointingHandCursor</cursorShape>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton{
+    background-color:rgb(170, 85, 255);
+    color: white;
+    border: none;
+ 	border-radius:6px;
+    padding: 12px;
+    font-size: 16px;
+}
+
+QPushButton:hover{
+    background-color:rgb(170, 170, 255);
+}
+QPushButton:pressed {
+    background-color:rgb(170, 0, 255);
+}
+</string>
+                 </property>
+                 <property name="text">
+                  <string>Оформити продаж</string>
+                 </property>
+                </widget>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="reportsPage">
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_4">
+        <item row="1" column="0">
+         <widget class="QComboBox" name="MonthcomboBox">
+          <property name="maximumSize">
+           <size>
+            <width>230</width>
+            <height>16777215</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="0">
+         <widget class="QLabel" name="label_13">
+          <property name="text">
+           <string>Виберіть місяць:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="2">
+         <widget class="QLabel" name="label_15">
+          <property name="font">
+           <font>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Чеки: </string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="0">
+         <widget class="QLabel" name="label_16">
+          <property name="font">
+           <font>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Товари в чеку:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="0" colspan="3">
+         <widget class="QTableWidget" name="ItemTable">
+          <property name="styleSheet">
+           <string notr="true">QTableWidget::item:selected {
+    background-color:#8ec5ff;
+    color: black;
+}
+QTableWidget::item {
+    background-color:rgb(255, 255, 255);
+}
+QTableWidget::item:hover {
+    background-color: #8ec5ff;
+}</string>
+          </property>
+          <column>
+           <property name="text">
+            <string>Назва</string>
+           </property>
+           <property name="background">
+            <color>
+             <red>216</red>
+             <green>216</green>
+             <blue>216</blue>
+            </color>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Ціна</string>
+           </property>
+           <property name="background">
+            <color>
+             <red>216</red>
+             <green>216</green>
+             <blue>216</blue>
+            </color>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Кількість </string>
+           </property>
+           <property name="background">
+            <color>
+             <red>216</red>
+             <green>216</green>
+             <blue>216</blue>
+            </color>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Сума </string>
+           </property>
+           <property name="background">
+            <color>
+             <red>216</red>
+             <green>216</green>
+             <blue>216</blue>
+            </color>
+           </property>
+          </column>
+         </widget>
+        </item>
+        <item row="2" column="0">
+         <widget class="QLabel" name="label_14">
+          <property name="font">
+           <font>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Дні:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="0">
+         <widget class="QTableWidget" name="DaysTable">
+          <property name="styleSheet">
+           <string notr="true">QTableWidget::item:selected {
+    background-color:#8ec5ff;
+    color: black;
+}
+QTableWidget::item {
+    background-color:rgb(255, 255, 255);
+}
+QTableWidget::item:hover {
+    background-color: #8ec5ff;
+}</string>
+          </property>
+          <column>
+           <property name="text">
+            <string>Дата</string>
+           </property>
+           <property name="background">
+            <color>
+             <red>216</red>
+             <green>216</green>
+             <blue>216</blue>
+            </color>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Кількість чеків</string>
+           </property>
+           <property name="background">
+            <color>
+             <red>216</red>
+             <green>216</green>
+             <blue>216</blue>
+            </color>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Продано товарів</string>
+           </property>
+           <property name="background">
+            <color>
+             <red>216</red>
+             <green>216</green>
+             <blue>216</blue>
+            </color>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Сума</string>
+           </property>
+           <property name="background">
+            <color>
+             <red>216</red>
+             <green>216</green>
+             <blue>216</blue>
+            </color>
+           </property>
+          </column>
+         </widget>
+        </item>
+        <item row="3" column="2">
+         <widget class="QTableWidget" name="CheksTable">
+          <property name="styleSheet">
+           <string notr="true">QTableWidget::item:selected {
+    background-color:#8ec5ff;
+    color: black;
+}
+QTableWidget::item {
+    background-color:rgb(255, 255, 255);
+}
+QTableWidget::item:hover {
+    background-color: #8ec5ff;
+}</string>
+          </property>
+          <column>
+           <property name="text">
+            <string>№ чеку</string>
+           </property>
+           <property name="background">
+            <color>
+             <red>216</red>
+             <green>216</green>
+             <blue>216</blue>
+            </color>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Час</string>
+           </property>
+           <property name="background">
+            <color>
+             <red>216</red>
+             <green>216</green>
+             <blue>216</blue>
+            </color>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Продавець</string>
+           </property>
+           <property name="background">
+            <color>
+             <red>216</red>
+             <green>216</green>
+             <blue>216</blue>
+            </color>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Кількість товарів</string>
+           </property>
+           <property name="background">
+            <color>
+             <red>216</red>
+             <green>216</green>
+             <blue>216</blue>
+            </color>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Сума чеку</string>
+           </property>
+           <property name="background">
+            <color>
+             <red>216</red>
+             <green>216</green>
+             <blue>216</blue>
+            </color>
+           </property>
+          </column>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="loginPage">
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <widget class="QFrame" name="meinFrame">
+      <property name="geometry">
+       <rect>
+        <x>510</x>
+        <y>150</y>
+        <width>750</width>
+        <height>400</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QFrame{
+    background-color:rgb(218, 218, 218);
+
+    border-radius:25px;
+}</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Shape::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Shadow::Raised</enum>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <widget class="QWidget" name="leftWidget" native="true">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+           <horstretch>1</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_2">
+          <property name="spacing">
+           <number>15</number>
+          </property>
+          <property name="leftMargin">
+           <number>10</number>
+          </property>
+          <property name="topMargin">
+           <number>30</number>
+          </property>
+          <property name="rightMargin">
+           <number>10</number>
+          </property>
+          <property name="bottomMargin">
+           <number>10</number>
+          </property>
+          <item>
+           <layout class="QGridLayout" name="gridLayout_2">
+            <property name="leftMargin">
+             <number>10</number>
+            </property>
+            <property name="topMargin">
+             <number>0</number>
+            </property>
+            <property name="rightMargin">
+             <number>10</number>
+            </property>
+            <property name="bottomMargin">
+             <number>0</number>
+            </property>
+            <item row="1" column="0">
+             <widget class="QLabel" name="label_3">
+              <property name="maximumSize">
+               <size>
+                <width>16777215</width>
+                <height>30</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <pointsize>11</pointsize>
+                <fontweight>DemiBold</fontweight>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QLabel{
+background-color: none;
+font-weight: 600;
+pading:0px;
+margin: 0px 0px;
+
+}</string>
+              </property>
+              <property name="text">
+               <string>логін</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="0">
+             <widget class="QLabel" name="label">
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>40</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <family>Microsoft YaHei</family>
+                <pointsize>22</pointsize>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">color:rgb(0, 0, 0);
+background: transparent;
+font-weight: bold;</string>
+              </property>
+              <property name="text">
+               <string>увійти</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignmentFlag::AlignCenter</set>
+              </property>
+              <property name="wordWrap">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="0">
+             <widget class="QLabel" name="label_4">
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>16777215</width>
+                <height>30</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <pointsize>11</pointsize>
+                <fontweight>DemiBold</fontweight>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QLabel{
+background-color: none;
+font-weight: 600;
+
+}</string>
+              </property>
+              <property name="text">
+               <string>пароль</string>
+              </property>
+             </widget>
+            </item>
+            <item row="5" column="0">
+             <widget class="QLabel" name="errorLabel">
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>20</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>16777215</width>
+                <height>15</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">
+QLabel{
+background-color: none;
+color: red;
+font-size: 14px;
+
+}</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="0">
+             <widget class="QLineEdit" name="loginEdit">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QLineEdit{
+    border: none;
+    border-bottom:2px solid #7c6cff;
+    background:transparent;
+    padding: 4px;
+    font-size: 16px;
+}</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+            <item row="4" column="0">
+             <widget class="QLineEdit" name="passwordEdit">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>16</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QLineEdit{
+    border: none;
+    border-bottom:2px solid #7c6cff;
+    background:transparent;
+    padding: 4px;
+    font-size: 16px;
+}</string>
+              </property>
+              <property name="echoMode">
+               <enum>QLineEdit::EchoMode::Password</enum>
+              </property>
+             </widget>
+            </item>
+            <item row="6" column="0" rowspan="2">
+             <widget class="QPushButton" name="loginButton">
+              <property name="cursor">
+               <cursorShape>PointingHandCursor</cursorShape>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border: none;
+    border-radius: 15px;
+    padding: 12px;
+    font-size: 16px;
+}
+
+QPushButton:hover{
+    background-color: #7367ff;
+}</string>
+              </property>
+              <property name="text">
+               <string>вхід</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QWidget" name="rightWidget" native="true">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+           <horstretch>1</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>250</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>270</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_2">
+          <item>
+           <widget class="QLabel" name="images">
+            <property name="enabled">
+             <bool>true</bool>
+            </property>
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>250</width>
+              <height>350</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>250</width>
+              <height>450</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QLabel{
+border-image: url(:/new/prefix1/6aa65ace-14c9-420d-b56f-dbfbe28158b0.png);
+border-radius:20px;
+}</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="scaledContents">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1512</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

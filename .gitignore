@@ -1,0 +1,12 @@
+build/
+cmake-build-debug/
+cmake-build-release/
+
+CMakeFiles/
+CMakeCache.txt
+
+*.user
+*.autosave
+
+.vs/
+.idea/
