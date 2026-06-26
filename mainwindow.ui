@@ -850,7 +850,7 @@ QTableWidget::item:hover {
 }</string>
            </property>
            <property name="text">
-            <string/>
+            <string> </string>
            </property>
           </widget>
          </widget>
@@ -1101,7 +1101,7 @@ QPushButton:pressed {
             </rect>
            </property>
            <property name="cursor">
-            <cursorShape>ForbiddenCursor</cursorShape>
+            <cursorShape>PointingHandCursor</cursorShape>
            </property>
            <property name="styleSheet">
             <string notr="true">QPushButton{
@@ -1158,8 +1158,7 @@ QPushButton:pressed {
            <item>
             <widget class="QWidget" name="widget_2" native="true">
              <property name="styleSheet">
-              <string notr="true">
-</string>
+              <string notr="true"/>
              </property>
              <layout class="QVBoxLayout" name="verticalLayout_3">
               <item>
@@ -1171,8 +1170,7 @@ QPushButton:pressed {
                  </size>
                 </property>
                 <property name="styleSheet">
-                 <string notr="true">
-</string>
+                 <string notr="true"/>
                 </property>
                 <widget class="QLineEdit" name="selasSearchEdit">
                  <property name="geometry">
@@ -1342,8 +1340,7 @@ QTableWidget::item:hover {
                  </size>
                 </property>
                 <property name="styleSheet">
-                 <string notr="true">
-</string>
+                 <string notr="true"/>
                 </property>
                 <widget class="QLabel" name="label_5">
                  <property name="geometry">
