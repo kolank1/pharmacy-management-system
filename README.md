@@ -22,3 +22,5 @@ Desktop pharmacy management system developed using **C++**, **Qt Widgets**, and 
 ## Screenshots
 
 Screenshots of the application are available in the `screenshots` folder.
+
+![Medicines](screenshots/medicine.png)
